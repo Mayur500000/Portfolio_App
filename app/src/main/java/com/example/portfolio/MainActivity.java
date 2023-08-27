@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button calButton = findViewById(R.id.projets);
-        calButton.setOnClickListener(new View.OnClickListener() {
+        Button projectButton = findViewById(R.id.projets);
+        projectButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Button Working!", Toast.LENGTH_SHORT).show();
