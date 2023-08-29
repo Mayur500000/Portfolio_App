@@ -6,4 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".BasicScreen">
 
+    <Button
+        android:id="@+id/heightButton"
+        android:layout_width="161dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="116dp"
+        android:onClick="heightBtn"
+        android:text="Height Calculator"
+        app:layout_constraintBottom_toTopOf="@+id/luckynumberButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:layout_marginBottom="98dp"
+        android:text="Baisc Apps "
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/heightButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/luckynumberButton"
+        android:layout_width="161dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="202dp"
+        android:onClick="luckyBtn"
+        android:text="LuckyNumber "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
