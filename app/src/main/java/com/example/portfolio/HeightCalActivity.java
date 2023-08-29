@@ -31,11 +31,16 @@ public class HeightCalActivity extends AppCompatActivity {
 
     }
     public void covertMethod(View view) {
-        Toast.makeText(HeightCalActivity.this, "Button Working", Toast.LENGTH_SHORT).show();
-        String s = editConverterText.getText().toString();
-        int cm = Integer.parseInt(s);
-        Double feet = 0.032808*cm;
-        conveterText.setText("Your height in Feet is "+ feet);
+        try {
+            Toast.makeText(HeightCalActivity.this, "Button Working", Toast.LENGTH_SHORT).show();
+            String s = editConverterText.getText().toString();
+            int cm = Integer.parseInt(s);
+            Double feet = 0.032808 * cm;
+            conveterText.setText("Your height in Feet is " + feet);
+        }
+        catch (Exception e){
+            Toast.makeText(HeightCalActivity.this, "Enter value", Toast.LENGTH_SHORT).show();
+        }
     }
 
 }

@@ -19,7 +19,7 @@ public class ProjectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(ProjectActivity.this,"Basic Projects",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(ProjectActivity.this,HeightCalActivity.class );
+                Intent intent = new Intent(ProjectActivity.this, BasicScreen.class );
                 startActivity(intent);
             }
         });
