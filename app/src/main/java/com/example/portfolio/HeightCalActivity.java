@@ -32,7 +32,7 @@ public class HeightCalActivity extends AppCompatActivity {
     }
     public void covertMethod(View view) {
         try {
-            Toast.makeText(HeightCalActivity.this, "Button Working", Toast.LENGTH_SHORT).show();
+            Toast.makeText(HeightCalActivity.this, "Coverting", Toast.LENGTH_SHORT).show();
             String s = editConverterText.getText().toString();
             int cm = Integer.parseInt(s);
             Double feet = 0.032808 * cm;

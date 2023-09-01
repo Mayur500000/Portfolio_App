@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -43,6 +44,7 @@ public class LuckyNo2Basic extends AppCompatActivity {
         return randomnumber;
     }
     public void shareData(String uname ,int randno){
+        Toast.makeText(LuckyNo2Basic.this,"Sharing...", Toast.LENGTH_SHORT).show();
         Intent i = new  Intent(Intent.ACTION_SEND);
         i.setType("text/plain");
         i.putExtra(Intent.EXTRA_SUBJECT,uname+ "Check out");

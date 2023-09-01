@@ -14,11 +14,13 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="35dp"
         android:text="Enter Height in centimerter "
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
         app:layout_constraintEnd_toEndOf="@+id/editTextNumber" />
 
     <EditText
         android:id="@+id/editTextNumber"
+        android:textColorHint="@color/black"
         android:layout_width="236dp"
         android:layout_height="96dp"
         android:ems="10"

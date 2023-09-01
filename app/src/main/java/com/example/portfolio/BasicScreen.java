@@ -25,7 +25,7 @@ public class BasicScreen extends AppCompatActivity {
         startActivity(intent);
     }
     public void luckyBtn(View view){
-        Toast.makeText(BasicScreen.this,"Height Calulator", Toast.LENGTH_SHORT).show();
+        Toast.makeText(BasicScreen.this,"LuckyNumber", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(BasicScreen.this, LuckyNoBasic.class );
         startActivity(intent);
     }

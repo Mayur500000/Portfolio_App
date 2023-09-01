@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class LuckyNoBasic extends AppCompatActivity {
 
@@ -25,6 +26,7 @@ public class LuckyNoBasic extends AppCompatActivity {
 
     }
     public void guess(View view){
+        Toast.makeText(LuckyNoBasic.this,"Good Luck", Toast.LENGTH_SHORT).show();
         String s = editText.getText().toString();
         Intent i = new Intent(getApplicationContext(), LuckyNo2Basic.class);
         i.putExtra("name",s);
