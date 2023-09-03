@@ -21,6 +21,7 @@
     <EditText
         android:id="@+id/editTextNumber"
         android:textColorHint="@color/black"
+        android:textColor="@color/black"
         android:layout_width="236dp"
         android:layout_height="96dp"
         android:ems="10"
