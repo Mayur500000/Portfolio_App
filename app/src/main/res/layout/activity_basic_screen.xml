@@ -10,8 +10,9 @@
     <Button
         android:id="@+id/heightButton"
         android:layout_width="161dp"
+
         android:layout_height="0dp"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="49dp"
         android:onClick="heightBtn"
         android:text="Height Calculator"
         android:textSize="14sp"
@@ -24,8 +25,8 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="63dp"
-        android:layout_marginBottom="98dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="58dp"
         android:text="Baisc Apps "
         android:textColor="@color/black"
         android:textSize="34sp"
@@ -38,12 +39,23 @@
         android:id="@+id/luckynumberButton"
         android:layout_width="161dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="202dp"
+        android:layout_marginBottom="53dp"
         android:onClick="luckyBtn"
         android:text="LuckyNumber "
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/heightButton" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="161dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="146dp"
+        android:text="Scroll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/luckynumberButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
