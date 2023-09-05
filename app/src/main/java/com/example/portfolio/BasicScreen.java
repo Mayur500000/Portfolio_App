@@ -29,4 +29,9 @@ public class BasicScreen extends AppCompatActivity {
         Intent intent = new Intent(BasicScreen.this, LuckyNoBasic.class );
         startActivity(intent);
     }
+    public void scrollBtn(View view){
+        Toast.makeText(BasicScreen.this,"Scroll", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(BasicScreen.this, Scroll_Basic.class );
+        startActivity(intent);
+    }
 }
