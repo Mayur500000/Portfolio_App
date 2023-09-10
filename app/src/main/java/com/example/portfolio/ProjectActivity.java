@@ -24,4 +24,9 @@ public class ProjectActivity extends AppCompatActivity {
             }
         });
     }
+    public void intermediateBtn(View view){
+        Toast.makeText(ProjectActivity.this,"Intermediate", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(ProjectActivity.this, Intermediate.class );
+        startActivity(intent);
+    }
 }
