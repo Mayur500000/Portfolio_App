@@ -25,6 +25,7 @@
         android:layout_width="184dp"
         android:layout_height="0dp"
         android:layout_marginBottom="335dp"
+        android:onClick="intermediateBtn"
         android:text="Intermediate"
         android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
