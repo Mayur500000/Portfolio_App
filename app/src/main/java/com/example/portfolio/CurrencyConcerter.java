@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Scroll_Basic extends AppCompatActivity {
+public class CurrencyConcerter extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scroll_basic);
+        setContentView(R.layout.activity_currency_concerter);
     }
 }

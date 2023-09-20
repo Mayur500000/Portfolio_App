@@ -13,10 +13,10 @@
         android:theme="@style/Theme.Portfolio"
         tools:targetApi="31">
         <activity
-            android:name=".Intermediate"
+            android:name=".CurrencyConcerter"
             android:exported="false" />
         <activity
-            android:name=".Scroll_Basic"
+            android:name=".Intermediate"
             android:exported="false" />
         <activity
             android:name=".BasicScreen"
