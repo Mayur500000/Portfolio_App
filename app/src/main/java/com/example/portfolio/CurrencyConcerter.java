@@ -69,88 +69,87 @@ public class CurrencyConcerter extends AppCompatActivity {
 
             if (cur1.equals("RS") && cur2.equals("RS")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 1) + " ₹");
+                tv1.setText(String.format("%.5f ₹", val * 1));
             } else if (cur1.equals("RS") && cur2.equals("USD")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 0.012) + " $");
+                tv1.setText(String.format("%.5f $", val * 0.012));
             } else if (cur1.equals("RS") && cur2.equals("YEN")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 1.76) + " ¥");
+                tv1.setText(String.format("%.5f ¥", val * 1.76));
             } else if (cur1.equals("RS") && cur2.equals("EURO")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 0.011) + " €");
+                tv1.setText(String.format("%.5f €", val * 0.011));
             } else if (cur1.equals("RS") && cur2.equals("RUBLE")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 1.16) + " ₽");
+                tv1.setText(String.format("%.5f ₽", val * 1.16));
             }
-
             //USD
-            else if (cur1.equals("USE") && cur2.equals("RS")) {
+            else if (cur1.equals("USD") && cur2.equals("RS")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 83.16) + " ₹");
+                tv1.setText(String.format("%.5f ₹", val * 86.16));
             } else if (cur1.equals("USD") && cur2.equals("USD")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 1) + " $");
+                tv1.setText(String.format("%.5f $", val * 1));
             } else if (cur1.equals("USD") && cur2.equals("YEN")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 148.14) + " ¥");
+                tv1.setText(String.format("%.5f ¥", val * 148.14));
             } else if (cur1.equals("USD") && cur2.equals("EURO")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 0.94) + " €");
+                tv1.setText(String.format("%.5f €", val * 0.94));
             } else if (cur1.equals("USD") && cur2.equals("RUBLE")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 96.50) + " ₽");
+                tv1.setText(String.format("%.5f ₽", val * 96.50));
             }
             //YEN
             else if (cur1.equals("YEN") && cur2.equals("RS")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 0.56) + " ₹");
+                tv1.setText(String.format("%.5f ₹", val * 0.56));
             } else if (cur1.equals("YEN") && cur2.equals("USD")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 0.0068) + " $");
+                tv1.setText(String.format("%.5f $", val * 0.0068));
             } else if (cur1.equals("YEN") && cur2.equals("YEN")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 1) + " ¥");
+                tv1.setText(String.format("%.5f ¥", val * 1));
             } else if (cur1.equals("YEN") && cur2.equals("EURO")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 0.0063) + " €");
-            } else if (cur1.equals("USD") && cur2.equals("RUBLE")) {
+                tv1.setText(String.format("%.5f €", val * 0.0063));
+            } else if (cur1.equals("YEN") && cur2.equals("RUBLE")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 0.65) + " ₽");
+                tv1.setText(String.format("%.5f ₽", val * 0.65));
             }
             //EURO
             else if (cur1.equals("EURO") && cur2.equals("RS")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 88.91) + " ₹");
+                tv1.setText(String.format("%.5f ₹", val * 88.91));
             } else if (cur1.equals("EURO") && cur2.equals("USD")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 1.07) + " $");
+                tv1.setText(String.format("%.5f $", val * 1.07));
             } else if (cur1.equals("EURO") && cur2.equals("YEN")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 158.37) + " ¥");
+                tv1.setText(String.format("%.5f ¥", val * 158.37));
             } else if (cur1.equals("EURO") && cur2.equals("EURO")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 1) + " €");
+                tv1.setText(String.format("%.5f €", val * 1));
             } else if (cur1.equals("EURO") && cur2.equals("RUBLE")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 103.42) + " ₽");
+                tv1.setText(String.format("%.5f ₽", val * 103.42));
             }
             //RUBLE
             else if (cur1.equals("RUBLE") && cur2.equals("RS")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 0.86) + " ₹");
+                tv1.setText(String.format("%.5f ₹", val * 0.86));
             } else if (cur1.equals("RUBLE") && cur2.equals("USD")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 0.010) + " $");
+                tv1.setText(String.format("%.5f $", val * 0.010));
             } else if (cur1.equals("RUBLE") && cur2.equals("YEN")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 1.53) + " ¥");
+                tv1.setText(String.format("%.5f ¥", val * 1.53));
             } else if (cur1.equals("RUBLE") && cur2.equals("EURO")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 0.0097) + " €");
+                tv1.setText(String.format("%.5f €", val * 0.0097));
             } else if (cur1.equals("RUBLE") && cur2.equals("RUBLE")) {
                 val = Double.parseDouble(edt1.getText().toString());
-                tv1.setText(String.valueOf(val * 1) + " ₽");
+                tv1.setText(String.format("%.5f ₽", val * 1));
             }
         }
         catch (Exception e){
